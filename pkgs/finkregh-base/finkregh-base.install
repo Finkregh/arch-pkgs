@@ -1,0 +1,11 @@
+post_install() {
+    systemctl enable --now systemd-timesyncd
+    ln -sf /usr/share/zoneinfo/Europe/Berlin "/etc/localtime"
+    sed 's/#de_DE/de_DE/' -i /etc/locale.gen
+    locale-gen
+}
+
+post_upgrade() {
+    sed 's/#de_DE/de_DE/' -i /etc/locale.gen
+    locale-gen
+}
