@@ -17,7 +17,6 @@ depends=(
     'arch-install-scripts'
     'aur-auto-vote-git'
     'avahi'
-    'base-devel'
     'bash'
     'bash-completion'
     'bc'
@@ -38,7 +37,6 @@ depends=(
     'ethtool'
     'exa'
     'exfat-utils'
-    'f2fs-tools'
     'fd-rs'
     'feh'
     'file'
@@ -57,7 +55,6 @@ depends=(
     'gopass'
     'gparted'
     'grep'
-    'grml-zsh-config'
     'groff'
     'gzip'
     'hddtemp'
@@ -112,7 +109,6 @@ depends=(
     'patch'
     'pavucontrol'
     'pciutils'
-    'pcmciautils'
     'pdftk-bin'
     'perl'
     'perl-file-mimeinfo'
@@ -126,7 +122,6 @@ depends=(
     'pwgen'
     'python'
     'python-neovim'
-    'python2-neovim'
     'restic'
     'ripgrep'
     'rsync'
@@ -171,4 +166,7 @@ depends=(
     'zfs-utils-git'
     'zsh'
     'zsh-completions'
+)
+optdepends=(
+    'base-devel'
 )
